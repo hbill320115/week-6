@@ -1,0 +1,19 @@
+@mixin pc{ 
+    @media(min-width:991px){ 
+    @content ; 
+    }
+}
+.header-search{
+    @include pc{
+        height: 48px;
+        width: 276px;
+    }
+}
+.header{
+    .navbar-brand{
+        line-height: 0;
+    }
+    .nav-link.btn-login{
+        line-height: 19.2px;
+    }
+}

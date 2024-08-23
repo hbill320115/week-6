@@ -1,0 +1,38 @@
+.about-breadcrumb{
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 5%;
+    @include lg{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.about-title{
+    @include lg{
+        font-size: 40px;
+    }
+}
+.about-content-title{
+    @include lg{
+        font-size: 32px;
+    }
+}
+.history{
+    
+    @include xl{
+        margin-left: 31px;
+        margin-right: 31px;
+        
+    }
+}
+.history-text{
+    @include lg{
+        font-size: 24px;
+    }
+}
+.moon{
+    width: 48px;
+}
+.text-09090B{
+    color: #09090B;
+}

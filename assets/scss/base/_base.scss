@@ -1,0 +1,55 @@
+@mixin sm {
+    @media (min-width:375px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width:991px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width:1200px) {
+        @content;
+    }
+}
+@mixin xxl {
+    @media (min-width:1400px) {
+        @content;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color:inherit;
+    display: inline-block;
+}
+p{
+    letter-spacing: 0.05em;
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 0.1em;
+}
+// *,*::after,*::before{
+//     // outline:1px solid red ;
+// }
+@media (min-width:376px){
+    .h1{
+        font-size: 52px;
+    }
+    .h3{
+        font-size: 40px ;
+    }
+    .h4{
+        font-size: 32px ;
+    }
+    .h5{
+        font-size: 24px;
+    }
+    .h6{
+        font-size: 20px ;
+    }
+}
+

@@ -1,0 +1,51 @@
+.hot-item{
+    border-radius:20px 0 20px 0 ;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #212529, $alpha: 0.4);
+    }
+    &:hoveer::before{
+        opacity: 1;
+    }
+} 
+.arrow-line{
+    width: 80px;
+    border:1px solid #6C757D;
+}
+.articles-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;   
+    overflow: hidden;  
+    text-overflow: ellipsis;
+   }
+.map-img-radius-one{
+    border-radius:20px 0px 0px 20px;
+    @include lg{
+        border-radius: 0px ;
+    }
+}
+.map-img-radius-four{
+    border-radius:0px 20px 20px 0px;
+    @include lg{
+        border-radius: 0px ;
+    }
+}
+.map-badge-lh{
+        line-height: 19.2px;
+}
+.swiper-prev,.swiper-next,.arrow-padding{
+    padding: 4px 16px 4px 16px;
+    border: 1px solid #6C757D;
+    border-radius:100px;
+    line-height: 0;
+}
