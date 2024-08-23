@@ -16,7 +16,7 @@ const swiper1 = new Swiper(".swiper1", {
       },
     },
     loop: true, 
-
+    modules: [Navigation, Pagination],
     spaceBetween: 48,
       pagination: {
         el: '.swiper-pagination-custom',
@@ -27,6 +27,9 @@ const swiper1 = new Swiper(".swiper1", {
         prevEl: '.swiper-prev',
       },
   });
+
+
+
 // ===============================================================================
   
   const swiper2 = new Swiper(".swiper2", {
